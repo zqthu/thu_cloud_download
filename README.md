@@ -1,7 +1,9 @@
 # THU Cloud Download
 
 ## Usage
-Retrieve files from shared links of [**Tsinghua Cloud**](#https://cloud.tsinghua.edu.cn/).
+Retrieve files from shared links of [**Tsinghua Cloud**][tsinghua_cloud].
+
+[tsinghua_cloud]: https://cloud.tsinghua.edu.cn
 
 ## How to Use It?
 1. **Download** thu_cloud_download.py
@@ -9,7 +11,9 @@ Retrieve files from shared links of [**Tsinghua Cloud**](#https://cloud.tsinghua
 2. **Enjoy yourself~**
 
 ## License
-[MIT](#https://github.com/zqthu/thu_cloud_download/blob/master/LICENSE)
+[MIT][mit_licence]
+
+[mit_licence]: https://github.com/zqthu/thu_cloud_download/blob/master/LICENSE
 
 ## TODO
 By now, this program can only download all files by default : )

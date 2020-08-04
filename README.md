@@ -9,7 +9,7 @@ Retrieve files from shared links of [**Tsinghua Cloud**](#https://cloud.tsinghua
 2. **Enjoy yourself~**
 
 ## License
-MIT
+[MIT](#https://github.com/zqthu/thu_cloud_download/blob/master/LICENSE)
 
 ## TODO
 By now, this program can only download all files by default : )

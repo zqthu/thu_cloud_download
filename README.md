@@ -2,7 +2,7 @@
 
 ## Usage
 - Retrieve files from shared links of [**Tsinghua Cloud**][tsinghua_cloud].
-- 从清华网盘批量下载文件
+- 从清华网盘的分享链接中批量下载文件
 
 [tsinghua_cloud]: https://cloud.tsinghua.edu.cn
 

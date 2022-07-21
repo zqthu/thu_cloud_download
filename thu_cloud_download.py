@@ -62,8 +62,11 @@ class THUCloud():
     def _parse_url(self, path):
         url = self.api_link + '?path=' + path
         response = requests.get(url=url, headers=self.headers)
-        assert response.status_code == 200
-        return response.content.decode()
+        if response.status_code == 200:
+            return response.content.decode()
+        else:
+            print('ERROR OCURRED!!!!')
+            return ''
 
     def _retrieve_file(self, url, name): # for small files
         file_path = os.path.join(self.current_dir, name)
@@ -74,7 +77,11 @@ class THUCloud():
             f.write(content)
 
     def _recursion_download(self, path):
+        print(self.file_link+path)
         response = self._parse_url(path)
+        if response == '':
+            self._move_to("..")
+            return
         response_dict = json.loads(response)
         for item in response_dict['dirent_list']:
             # print(item)
@@ -106,7 +113,7 @@ if __name__ == "__main__":
     """
 
     # replace the shared_link here
-    shared_link = "https://cloud.tsinghua.edu.cn/f/2c50c14239b641d09632/"
+    shared_link = "https://cloud.tsinghua.edu.cn/d/bcca2e9526744752bd34/"
 
     # output dir (optional)
     out_dir = "archive"

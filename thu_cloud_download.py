@@ -76,6 +76,7 @@ class THUCloud():
     def _recursion_download(self, path):
         response = self._parse_url(path)
         response_dict = json.loads(response)
+
         for item in response_dict['dirent_list']:
             # print(item)
             if item['is_dir'] == True:
@@ -104,12 +105,17 @@ if __name__ == "__main__":
         https://cloud.tsinghua.edu.cn/f/2c50c14239b641d09632/
         https://cloud.tsinghua.edu.cn/d/36320b3f8a86487c931a/
     """
-
+    print('请输入清华云盘链接（例：https://cloud.tsinghua.edu.cn/f/2c50c14239b641d09632/）\n按回车开始下载')
     # replace the shared_link here
-    shared_link = "https://cloud.tsinghua.edu.cn/f/2c50c14239b641d09632/"
+    shared_link = input()
+    # shared_link = "https://cloud.tsinghua.edu.cn/f/2c50c14239b641d09632/"
 
     # output dir (optional)
     out_dir = "archive"
 
     t = THUCloud(shared_link, out_dir)
+    outdir = t.current_dir
+    print('下载到：'+t.current_dir)
+    print('下载中...')
     t.download()
+    print('下载完成。')

@@ -1,5 +1,19 @@
 # THU Cloud Download
 
+## 20221110更新
+
+**代码更改：**
+
+1. 运行界面输入链接作为参数
+2. 打包可执行文件
+
+**使用方法：**
+
+1. windows系统：下载 `./exe_windows/thu_cloud_download.exe` 文件，双击执行。
+2. linux系统：下载 `./exe_linux/thu_cloud_download` 文件，执行。
+
+---------------------------------
+
 ## Usage
 - Retrieve files from shared links of [**Tsinghua Cloud**][tsinghua_cloud].
 - 从清华网盘的分享链接中批量下载文件
